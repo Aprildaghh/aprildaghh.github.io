@@ -1,0 +1,867 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+img {
+    width: 10vw;
+}
+
+/* header */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    min-width: 100vw;
+    z-index: 5;
+}
+
+.header-top {
+    background-color: #475569;
+    padding: 5px 0;
+    height: 30px;
+    vertical-align: middle;
+    width: 100%;
+    text-align: right;
+}
+
+.header-top > ul {
+    flex-direction: row;
+    font-size: .8rem;
+    list-style-type: none;
+}
+
+.header-top > ul > li{
+    display: inline-block;
+    padding: 0 5px;
+    border-left: 1px dotted white;
+    color: white;
+}
+
+.header-search {
+    display: none !important;
+}
+
+.header-main {
+    display: flex;
+    width: 100%;
+    background-color: #1e293b;
+    height: 60px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main-left-section {
+    display: flex;
+    padding-left: 5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 40px;
+}
+
+.header-logo-text {
+    display: none;
+}
+
+.hamburger {
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.header-hamburger-top::after,
+.header-hamburger-middle::after,
+.header-hamburger-bottom::after {
+    content: "";
+    display:inline-block;
+    width: 20px;
+    border: 1px solid white;
+}
+
+.header-hamburger-top::after{
+    margin-bottom: -15px;
+}
+
+.header-hamburger-bottom::after {
+    margin-bottom: 15px;
+}
+
+.header-main-right-section {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.header-main-right-section ul > li {
+    display: none !important;
+}
+
+
+/* MAIN */
+main {
+    margin-top: 90px;
+}
+
+/* GREET SECTION */
+.greet-section {
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+.greet-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.greet-bg img {
+    width: 100%;
+}
+
+.greet-section-text {
+    display: block;
+    padding: 10px 0 10px 20px;
+}
+
+.greet-section-text h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* FLIGHT SECTION */
+.flight-section {
+    display: block;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.flight-section > * {
+    display: block;
+    width: 96%;
+    padding: 10px;
+    margin: 5px 2%;
+}
+
+.flight {
+    color: white;
+    background: red;
+    border-radius: 5px;
+}
+
+.check-in {
+    box-shadow: .5px 3px rgb(197, 196, 196);
+}
+
+/* FLIGHT DETAILS SECTION */
+.flight-details-section {
+    flex-direction: column;
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.flight-details-header {
+    height: 1.4rem;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    font-size: .8rem;
+    margin: 10px 0;
+}
+
+.flight-details-header > * {
+    display: inline-block;
+    vertical-align:middle;
+    white-space:normal;
+}
+
+.flight-details-award-ticket {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.flight-details-form {
+    width: 100%;
+}
+
+.flight-details-form > * {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#flight-details-form-from,
+#flight-details-form-to{
+    width: 49%;
+    background-color: rgba(201, 191, 191, 0.295);
+}
+
+#flight-details-form-date {
+    width: 100%;
+    height: 60px;
+}
+
+#flight-details-form-passenger {
+    width: 100%;
+    background-color: rgba(201, 191, 191, 0.295);
+}
+
+.flight-details-form-btn {
+    color: white;
+    background-color: red;
+    margin: 10px 0;
+}
+
+.flight-details-recent-search {
+    width: 100%;
+    text-align: right;
+    font-size: .8rem;
+    margin: 10px 0;
+}
+
+/* FLIGHT EXTRA DETAILS */
+
+.flight-extra-details {
+    display: block;
+    width: 90%;
+    margin: 20px 5%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.flight-extra-details > * {
+    width: 32%;
+    display: inline-block;
+    height: 95px; 
+    border-right: 1px solid grey;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flight-extra-detail-img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: rgb(203, 214, 218);
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.flight-extra-details > *:last-child {
+    border: none;
+}
+
+.flight-extra-detail-img img {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
+/* WARNING */
+
+.warning {
+    margin: 10px;
+    padding: 15px;
+    border: 2px dotted lightblue;
+    border-radius: 5px;
+    position: relative;
+}
+
+.second-warning {
+    display: none !important;
+}
+
+.warning-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.warning-text {
+    padding: 0 20px;
+}
+
+.warning-text-title {
+    font-size: .9rem;
+    width: 80%;
+}
+
+.warning-text-p {
+    padding-top: 5px;
+    font-size: .8rem;
+    line-height: 1.3rem;
+}
+
+.warning-text-p span {
+    color: red;
+}
+
+/* ADS SECTION */
+.ads {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 0 10px;
+}
+
+.ad {
+    width: 100%;
+}
+
+.ad > h3 {
+    font-weight: 500;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.ad-img {
+    width: 100%;
+}
+
+.ad-img img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.ad p {
+    font-size: .8rem;
+    padding: 10px 0;
+}
+
+.ad-discover-btn {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* OFFERS */
+.offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+}
+
+.offers-title {
+    width: 100%;
+}
+
+.offers-title h1 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.offers-title h1 span {
+    color: red;
+}
+
+.offer {
+    width: 100%;
+    text-align: left;
+    padding: 40% 15px 15px 15px ;
+    color: white;
+    margin: 5px 0;
+}
+
+.offer > h2 {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.offer > h4 {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+.offer-btn {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    display: inline-block;
+}
+
+#lisbon {
+    background-image: url("./img/lisbon.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mauritius {
+    background-image: url("./img/mauritus.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sarajevo {
+    background-image: url("./img/sarajevo.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* SHOW CAMPAIGNS SECTION */
+.show-campaigns-section {
+    margin: 25px 10px;
+    text-align: center;
+}
+
+.show-campaigns-section h1 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+
+.show-campaigns-section h3 {
+    color: red;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* CAMPAIGN SECTION */
+.campaign-section {
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.campaign {
+    padding: 20px;
+}
+
+.campaign > * {
+    padding: 10px 0;
+}
+
+.campaign-img {
+    width: 100%;
+}
+
+.campaign-img img {
+    width: 80%;
+}
+
+.campaign h1 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.campaign p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.campaign h3 {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: red;
+}
+
+.campaign-three,
+.campaign-two {
+    display: none;
+}
+
+/* LICENCES */
+.licenses {
+    margin: 30px 0;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.license {
+    width: 22%;
+    display: flex;
+    align-items: center;
+}
+
+.license img {
+    height: 25px;
+    display: inline-block;
+}
+
+.license h3 {
+    font-size: .6rem;
+    padding: 0 10px;
+}
+
+/* LEAUGES */
+.leauges {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.leauge {
+    width: 30%;
+}
+
+.league img {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    display: block;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #2c3c53;
+}
+
+.social-links > * {
+    display: inline-block;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+/* FOOTER NAV SECTION */
+.footer-nav-section {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+    background-color: #0f151f;
+}
+
+.footer-nav-section > * {
+    display: inline-block;
+    width: 19%;
+    height: 75px;
+    color: white;
+    text-align: center;
+}
+
+.footer-nav-section p {
+    height: 75px;
+    padding-top: 25px;
+    font-size: .7rem;
+    font-weight: bold;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    display: block;
+    background-color: #0f151f;
+    color: white;
+    text-align: center;
+}
+
+.footer-bottom > div {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.footer-bottom h4 {
+    font-size: .7rem;
+    font-weight: lighter;
+}
+
+/* FOOTER COPYRIGHT */
+.footer-copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #0f151f;
+    color: white;
+    padding: 5px;
+}
+
+.footer-copyright h4 {
+    font-size: .7rem;
+    font-weight: lighter;
+}
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 690px) {
+
+    .container {
+        width: 60%;
+        margin: auto;
+    }
+    
+    /* HEADER */
+    .header-top {
+        padding-right: 20px;
+    }
+    .header-search{
+        display: inline-block !important;
+    }
+    .hamburger {
+        display: none;
+    }
+    .header-main-right-section {
+        padding-right: 25px;
+        display: block;
+        flex-direction: row;
+        text-align: center;
+    }
+    .header-main-right-section ul {
+        display: inline-block;
+    }
+    .header-main-right-section ul li {
+        display: inline-block !important;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-right: 1px dotted white;
+        padding: 0 10px;
+    }
+    .sign-up-button {
+        display: inline-block;
+    }
+    .header-logo-text{
+        display: inline-block;
+        font-weight: 800;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+
+    /* GREET SECTION */
+    .greet-section-text {
+        padding-top: 10rem;
+    }
+    .greet-section-text > h3 {
+        font-size: 2.5rem;
+    }
+
+    /* FLIGHT SECTION */
+    .flight-section > * {
+        display: inline-block;
+        width: auto;
+        background-color: white;
+        margin: 0;
+        border-radius: 5px 5px 0 0;
+        margin-top: 5rem;
+    }
+    .flight {
+        color: red;
+    }
+    .check-in {
+        box-shadow: none;
+    }
+    .check-in,
+    .flight-status {
+        background-color: rgb(214, 214, 214);
+    }
+    
+    /* FLIGHT DETAILS */
+    .flight-details-section {
+        background-color: white;
+        box-shadow: 2px  rgba(201, 191, 191, 0.295);
+    }
+    .flight-details-header {
+        width: 100%;
+    }
+    .flight-details-header > * {
+        display: inline-block;
+        font-size: 1rem;
+    }
+    .flight-details-header > label {
+        margin: 0 10px 0 0;
+    }
+    .flight-details-award-ticket {
+        float: right;
+        padding-right: 10px;
+    }
+    .flight-details-form {
+        width: 100%;
+        padding: 5px 2%;
+    }
+    .flight-details-form > * {
+        display: inline-block;
+        width: 19% !important;
+        height: 60px;
+        text-align: center;
+        font-size: 1rem;
+        vertical-align: middle;
+    }
+    .flight-details-recent-search {
+        padding-right: 20px;
+        font-size: .8rem;
+        font-weight: 400;
+    }
+    
+    /* FLIGHT EXTRA DETAILS */
+    .flight-extra-details {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        padding-top: 10px;
+        box-shadow: 2px #1e293b;
+    }
+    .flight-extra-details > * {
+        vertical-align: middle;
+        width: 15%;
+    }
+    
+    /* WARNING */
+    .warning {
+        margin-bottom: 5rem;
+    }
+    .warning-text {
+        padding: 20px;
+    }
+
+    /* ADS */
+    .ads {
+        flex-direction: row;
+    }
+    .ad {
+        width: 49%;
+        padding: 0 10px;
+    }
+    .ad:first-child{
+        border-right: 1px solid lightgrey;
+    }
+
+    /* OFFERS */
+    .offers {
+        padding: 3rem 0;
+    }
+    .offers-title {
+        padding: 20px 0;
+    }
+    .offers-title > h1 {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+    .offers-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .offer {
+        margin: 0 5px;
+        height: 15rem;
+        background-size: 100% 15rem !important;
+        padding: 6rem 40px 10px 10px ;
+    }
+    #lisbon {
+        width: 39%;
+    }
+    #mauritius,
+    #sarajevo {
+        width: 29%;
+    }
+
+    /* SHOW CAMPAIGNS */
+    .show-campaigns-section {
+        padding: 3rem 0;
+    }
+    .show-campaigns-section h1 {
+        font-size: 2rem;
+    }
+    .show-campaigns-section h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    /* CAMPAIGNS */
+    .campaign-section {
+        display: flex;
+        flex-direction: row;
+        padding: 4rem 0;
+    }
+    .campaign-two,
+    .campaign-three {
+        display: block;
+    }
+    .campaign {
+        width: 32%;
+    }
+    .campaign-img img {
+        width: 100%;
+    }
+    .campaign h1 {
+        font-weight: bold;
+    }
+    .campaign p {
+        font-size: .9rem;
+    }
+
+    /* LICENSES */
+    .licenses {
+        width: 100%;
+        padding: 1rem 0;
+        justify-content: center;
+    }
+    .license {
+        width: 15%;
+    }
+    .license img {
+        height: 80px;
+        width: auto;
+    }
+
+    /* FOOTER */
+    .footer-copyright {
+        padding-bottom: 50px;
+    }
+    .footer-bottom {
+        padding-top: 25px;
+    }
+    .footer-nav-section {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .footer-nav-section > * {
+        width: 6%;
+        overflow: hidden;
+        border-right: 1px solid #1e293b;
+    }
+    .footer-nav-section > *:first-child {
+        border-left: 1px solid #1e293b;
+    }
+    .footer-nav-section div p {
+        text-wrap: nowrap;
+    }
+
+
+}
+

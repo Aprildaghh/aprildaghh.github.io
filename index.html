@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THY Landing Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="header-top">
+            <ul>
+                <li>Corporate Club</li>
+                <li>Miles&Smiles</li>
+                <li class="header-search">Search</li>
+                <li>EN-INT</li>
+            </ul>
+        </div>
+        <div class="header-main">
+            <div class="header-main-left-section">
+                <div class="header-logo"><img src="./img/logo-sm.png" alt=""></div>
+                <div class="header-logo-text"><h2>TURKISH AIRLINES</h2></div>
+                <div class="hamburger">
+                    <div class="header-hamburger-top"></div>
+                    <div class="header-hamburger-middle"></div>
+                    <div class="header-hamburger-bottom"></div>
+                </div>
+            </div>
+            <div class="header-main-right-section">
+                <ul>
+                    <li>plan&book</li>
+                    <li>fly different</li>
+                    <li>discover</li>
+                    <li>miles&smiles</li>
+                    <li>help</li>
+                    <li>Sign in</li>
+                </ul>
+                <div class="sign-up-button">Sign up</div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="greet-section">
+            <div class="greet-bg"><img src="./img/main-bg.webp" alt=""></div>
+            <div class="greet-section-text container">
+                <h1>hello</h1>
+                <h3>Where do you want to explore?</h3>
+            </div>
+        </div>
+
+        <div class="flight-section container">
+            <div class="flight">Flight</div>
+            <div class="check-in">Check-in / Manage booking</div>
+            <div class="flight-status">Flight status</div>
+        </div>
+
+        <div class="flight-details-section container">
+            <div class="flight-details-header">
+                
+                <input selected type="radio" id="round-trip" name="flight-detail" value="round-trip">
+                <label for="round-trip">Round trip</label>
+                <input type="radio" id="one-way" name="flight-detail" value="one-way">
+                <label for="one-way">One way</label>
+                <input type="radio" id="stopover-in-istanbul" name="flight-detail" value="stopover-in-istanbul">
+                <label for="stopover-in-istanbul">Stopover in Istanbul</label>
+                <input type="radio" id="multi-city" name="flight-detail" value="multi-city">
+                <label for="multi-city">Multi-city</label>
+                
+                <div class="flight-details-award-ticket">Award ticket - Buy a ticket with Miles</div>
+            </div>
+            <div class="flight-details-form">
+                <input type="text" name="from" id="flight-details-form-from" placeholder="From">
+                <input type="text" name="to" id="flight-details-form-to" placeholder="To">
+                <input type="date" name="date" id="flight-details-form-date" placeholder="Dates">
+                <input type="text" name="passenger" id="flight-details-form-passenger" placeholder="Passengers">
+                <div class="flight-details-form-btn">Search flights</div>
+            </div>
+            <div class="flight-details-recent-search">Recent searches</div>
+        </div>
+
+        <div class="flight-extra-details container">
+            <div>
+                <div class="flight-extra-detail-img"><img src="https://www.turkishairlines.com/assets/koltuk-new-fe035456.svg" alt=""></div>
+                <div class="flight-extra-detail-title">Seat Selection</div>
+            </div>
+            <div>
+                <div class="flight-extra-detail-img"><img src="https://www.turkishairlines.com/assets/bagaj-new-550360c3.svg" alt=""></div>
+                <div class="flight-extra-detail-title">Extra Baggage</div>
+            </div>
+            <div>
+                <div class="flight-extra-detail-img"><img src="https://www.turkishairlines.com/assets/otel-new-cdb9bcea.svg" alt=""></div>
+                <div class="flight-extra-detail-title">Book a Hotel</div>
+            </div>
+            <div>
+                <div class="flight-extra-detail-img"><img src="https://www.turkishairlines.com/assets/arac-new-f2c45c70.svg" alt=""></div>
+                <div class="flight-extra-detail-title">Rent a Car</div>
+            </div>
+            <div>
+                <div class="flight-extra-detail-img"><img src="https://www.turkishairlines.com/assets/travelinsurance-new-3f1c3da2.svg" alt=""></div>
+                <div class="flight-extra-detail-title">Travel Insurance</div>
+            </div>
+            <div>
+                <div class="flight-extra-detail-img"><img src="https://www.turkishairlines.com/assets/giftcard-new-6b45e73f.svg" alt=""></div>
+                <div class="flight-extra-detail-title">Gift Card</div>
+            </div>
+        </div>
+
+        <div class="warning container">
+            <div class="warning-count">< 1 / 2 ></div>
+
+            <div class="warning-text">
+                <h3 class="warning-text-title">Our new brand AJet started online ticket sales!</h3>
+                <p class="warning-text-p">AnadoluJet, which meets the air transportation needs of Anatolia in an advantageous way, started ticket sales under the name AJet as of March 12, 2024 via its official website AJet.com. You can find detailed information about your questions about AnadoluJet and AJet flights on this <span>page</span>.</p>
+            </div>
+            <div class="warning-text second-warning">
+                <h3 class="warning-text-title">Dear Passengers,</h3>
+                <p class="warning-text-p">Some additional controls may be applied to accept passengers on our flights to Venezuela, Mexico, Colombia, Panama, Cuba and Brazil. You can find detailed information on this <span>page</span>.</p>
+            </div>
+        </div>
+
+        <div class="ads container">
+            <div class="ad">
+                <h3>For advantageous refunds and fast payment: TK Wallet!</h3>
+                <div class="ad-img"><img src="./img/ad-1.jpg" alt="ad"></div>
+                <p>With TK Wallet, our special product for Miles&Smiles members, you can perform payments and complete refund processes quickly and easily via a digital wallet created in one of four available currencies. In addition, you can earn incremental TK Money via refunds to your digital wallet.</p>
+                <div class="ad-discover-btn">Discover</div>
+            </div>
+            <div class="ad">
+                <h3>Touristanbul: An amazing experience!</h3>
+                <div class="ad-img"><img src="./img/ad-2.webp" alt="ad"></div>
+                <p>You can benefit from our complimentary Touristanbul service to make memories which is offered to our passengers who have a connecting international flight in Istanbul with a layover between 6-24 hours.</p>
+                <div class="ad-discover-btn">Discover</div>
+            </div>
+        </div>
+
+        <div class="offers container">
+            <div class="offers-title">
+                <h1>See our best offers from <span>Istanbul</span></h1>
+            </div>
+            <div class="offers-container">
+                <div class="offer" id="lisbon">
+                    <h2>Lisbon</h2>
+                    <h3>Starting from 334 USD</h3>
+                    <h4>Economy Class</h4>
+                    <div class="offer-btn">Book now</div>
+                </div>
+                <div class="offer" id="mauritius">
+                    <h2>Port Louis, Mauritius</h2>
+                    <h3>Starting from 785 USD</h3>
+                    <h4>Economy Class</h4>
+                    <div class="offer-btn">Book now</div>
+                </div>
+                <div class="offer" id="sarajevo">
+                    <h2>Sarajevo</h2>
+                    <h3>Starting from 149 USD</h3>
+                    <h4>Economy Class</h4>
+                    <div class="offer-btn">Book now</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="show-campaigns-section container">
+            <h1>To the new cities with special deals!</h1>
+            <h3>Show all campaigns >></h3>
+        </div>
+
+        <hr>
+
+        <div class="campaign-section container">
+            <div class="campaign campaign-one">
+                <div class="campaign-img"><img src="./img/campaign-1.avif" alt=""></div>
+                <h1>Online ticket sales for our new brand, AJet,</h1>
+                <p>AnadoluJet, that fulfills Anatolia's air transport needs, is now operating domestic and international flights under the AJet brand on ajet.com.</p>
+                <h3>Discover A Jet >></h3>
+            </div>
+            <div class="campaign campaign-two">
+                <div class="campaign-img"><img src="./img/campaign-2.avif" alt=""></div>
+                <h1>Explore best flight deals on our most</h1>
+                <p>Book your flight now with advantageous fares.</p>
+                <h3>Learn more >></h3>
+            </div>
+            <div class="campaign campaign-three">
+                <div class="campaign-img"><img src="./img/campaign-3.avif" alt=""></div>
+                <h1>20% discount for our teachers on domestic</h1>
+                <p>We accompany our valuable teachers as they explore!</p>
+                <h3>Book now >></h3>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="licenses">
+            <div class="license">
+                <img src="./img/licence-1.jpg" alt="licence">
+                <h3>WORLD CLASS AIRLINE</h3>
+            </div>
+            <div class="license">
+                <img src="./img/licence-2.avif" alt="licence">
+                <h3>FIVE STAR GLOBAL AIRLINE</h3>
+            </div>
+            <div class="license">
+                <img src="./img/licence-3-4.avif" alt="licence">
+                <h3>BEST AIRLINE IN EUROPE</h3>
+            </div>
+            <div class="license">
+                <img src="./img/licence-3-4.avif" alt="licence">
+                <h3>BEST BUSINESS CLASS CATERING</h3>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="leauges">
+            <div class="league"><img src="./img/league-1.webp" alt="league"></div>
+            <div class="league"><img src="./img/league-2.avif" alt="league"></div>
+            <div class="league"><img src="./img/league-3.avif" alt="league"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <div>F</div>
+            <div>X</div>
+            <div>INS</div>
+            <div>YT</div>
+            <div>LI</div>
+            <div>T</div>
+            <div>B</div>
+        </div>
+        <div class="footer-nav-section">
+            <div><p>PLAN & BOOK</p></div>
+            <div><p>FLY DIFFERENT</p></div>
+            <div><p>DISCOVER</p></div>
+            <div><p>FAVORITE DESTINATIONS</p></div>
+            <div><p>HELP</p></div>
+            <div><p>MILES&SMILES</p></div>
+            <div><p>CORPORATE CLUB</p></div>
+            <div><p>TURKISH AIRLINES</p></div>
+        </div>
+        <div class="footer-bottom">
+            <div><h4>Accessibility</h4></div>
+            <div><h4>Privacy & Cookie Policy</h4></div>
+            <div><h4>Legal Notice</h4></div>
+            <div><h4>Passenger Rights</h4></div>
+            <div><h4>Change Cookie Settings</h4></div>
+            <div><h4>EU Data Subjects Rights</h4></div>
+        </div>
+        <div class="footer-copyright"><h4>Turkish Airlines Copyright &copy; 1996 - 2024</h4></div>
+    </footer>
+
+</body>
+</html>
